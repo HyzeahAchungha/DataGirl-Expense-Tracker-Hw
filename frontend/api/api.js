@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api', // your backend URL
+  baseURL: 'https://datagirl-expense-tracker-hw-1.onrender.com', // your backend URL
 });
 
 export const getTransactions = (params) => API.get('/transactions', { params });
